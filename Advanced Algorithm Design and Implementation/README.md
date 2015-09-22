@@ -7,3 +7,8 @@
 Bill Byrne best explains Big Oh, Big Omega and Big Theta - https://www.youtube.com/watch?v=ei-A_wy5Yxw
 
 Some other best source - https://www.youtube.com/user/cannykicks/videos
+
+
+Calculate double hashing:
+
+print ( ( ( (2 * numb) + 5) % 11) + ( (7 - (numb % 7) ) ) ) % 11 
