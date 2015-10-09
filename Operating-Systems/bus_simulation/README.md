@@ -18,6 +18,10 @@ queue
 
 
 ###Assumptions:
-- It takes a passenger 2 seconds to board the bus
 - The stops are equally spaced in a circle
 - The buses may not pass one another
+- 15 bus stops
+- 5 buses
+- The time to drive between any two contiguous stops is 5 minutes
+- The passenger’s mean arrival rate at each stop is 5 persons/min
+- The boarding time is 2 seconds for each passenger
