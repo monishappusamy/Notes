@@ -1,3 +1,12 @@
+/**
+* 
+* The BusSimulation class is the start point for the application
+* it starts a simulated clock (8 hours) and
+* make calls to bus stops and buses to update their function and also
+* it prints minimum, average and maximum table after each successive hour (simulated time)
+* 
+*/
+
 package bus_simulation;
 import org.apache.log4j.Logger;
 
