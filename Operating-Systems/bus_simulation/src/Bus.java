@@ -1,9 +1,9 @@
 package bus_simulation;
 
 public class Bus{
-	String busName;
-	int currentBusStopNumber, travellingCounter, waitingCounter;
-	Boolean isOnBoarding, isTravelling, isWaiting;
+	private String busName;
+	private int currentBusStopNumber, travellingCounter, waitingCounter;
+	private Boolean isOnBoarding, isTravelling, isWaiting;
 	
 	public Bus(String busName){
 		this.busName = busName;
