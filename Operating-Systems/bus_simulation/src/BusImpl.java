@@ -1,6 +1,10 @@
 package bus_simulation;
 import org.apache.log4j.Logger;
 
+/**
+ * This class performs two operations, it creates / initializes 5 buses and it updates bus position each second.
+ * @author Monish Kumar Appusamy
+ */ 
 public class BusImpl {
 	private Bus[] bus;
 	PassengerQueue stopQueue;
@@ -9,6 +13,14 @@ public class BusImpl {
 	int boardedPassengerCounter = 0;
 	final static Logger logger = Logger.getLogger(BusSimulation.class);
 	
+	/**
+	 * creates 5 buses and initializes their starting point in following order,
+	 * Bus 1 - Stop number 1
+	 * Bus 2 - Stop number 4
+	 * Bus 3 - Stop number 7
+	 * Bus 4 - Stop number 10
+	 * Bus 5 - Stop number 14
+	 */ 
 	public void createBus(int numberOfBuses){
 		bus = new Bus[numberOfBuses];
 		for(int i=0; i<numberOfBuses; i++){
@@ -42,6 +54,12 @@ public class BusImpl {
 		}
 	}
 	
+	/**
+	 * updates bus position for each second, control is passed to the condition condition which is true-
+	 * 1. isTravelling
+	 * 2. isOnBoarding
+	 * 3. isWaiting
+	 */ 
 	public void updateBusPosition(int clock, BusStops allStops){
 		logger.info("Update Bus position called at time: " + clock);
 		for(int i=0; i<bus.length; i++){
@@ -147,6 +165,9 @@ public class BusImpl {
 		}
 	}
 	
+	/**
+	 * checks if there is any other bus waiting at a specific bus stop with greater waiting counter
+	 */ 
 	public Boolean checkIfThereIsAnyOtherBusWithGreaterCounter(int i){
 		logger.info("checking if there is any other bus which has greater waiting counter");
 		Boolean flag = false;
@@ -162,6 +183,9 @@ public class BusImpl {
 		return flag;
 	}
 	
+	/**
+	 * checks if there is any other bus onBoarding at next stop
+	 */ 
 	public Boolean checkIfThereIsABusInNextStop(int i){
 		logger.info("checking if there is any other bus standing in next stop");
 		Boolean flag = false;
