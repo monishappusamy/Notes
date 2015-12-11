@@ -19,6 +19,7 @@ for line in fileReader:
         current_url = url + str(i)
         filename = "page%i.html" % i
         filename = "/Users/Monish/Desktop/660/Extra_Project/" + hotelName + "/" + filename
+        print filename
         fw = open(filename,'w')
         driver = webdriver.Chrome('./chromedriver')
         driver.get(current_url)
