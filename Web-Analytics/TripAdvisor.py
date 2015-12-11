@@ -7,21 +7,22 @@ Created on Wed Dec  9 15:08:17 2015
 from selenium import webdriver
 import re
 
-i=7
-n=1000
-fileReader = open("haveto.txt")
+fileReader = open("haveto_Monish.txt")
 
 for line in fileReader:
     line = line.strip()
     hotelName, url = line.split('\t')
+    i=7
+    n=1000
 
     while i<=n:
-        url = url + str(i)
+        current_url = url + str(i)
         filename = "page%i.html" % i
         filename = "/Users/Monish/Desktop/660/Extra_Project/" + hotelName + "/" + filename
         fw = open(filename,'w')
         driver = webdriver.Chrome('./chromedriver')
-        driver.get(url)
+        driver.get(current_url)
+        print current_url
         html = driver.page_source
         for line in html:
             try:
