@@ -1,4 +1,0 @@
-/**
- *About to write
- *
- */
