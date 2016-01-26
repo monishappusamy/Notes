@@ -11,3 +11,11 @@ $ chmod 400 <private_key_file>.pem
 
 3. what filesystems are mounted?
 $ df
+
+4. run as postgres
+$ su postgres -
+
+5. Initialize a postgres database cluster and put it in /data
+$ /usr/bin/initdb -D /data
+
+6. 
