@@ -20,3 +20,11 @@ $ /usr/bin/initdb -D /data
 
 6. status of postgres server
 $ /usr/bin/pg_ctl status -D /data
+
+7. start postgresql server
+$ /usr/bin/pg_ctl start -D /data
+
+8. stop postgresql server
+/usr/bin/pg_ctl stop -D /data
+
+9. 
