@@ -9,3 +9,5 @@ Permission denied (publickey).
 
 $ chmod 400 <private_key_file>.pem
 
+3. what filesystems are mounted?
+$ df
