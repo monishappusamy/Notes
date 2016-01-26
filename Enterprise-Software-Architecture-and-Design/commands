@@ -18,4 +18,5 @@ $ su postgres -
 5. Initialize a postgres database cluster and put it in /data
 $ /usr/bin/initdb -D /data
 
-6. 
+6. status of postgres server
+$ /usr/bin/pg_ctl status -D /data
