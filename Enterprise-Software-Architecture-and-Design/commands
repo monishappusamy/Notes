@@ -45,3 +45,6 @@ wget --no-cookies \
 # then
 tar -xzvf jdk-7-linux-x64.tar.gz
 
+10. Become special glassfish user
+$ cd ~glassfish
+$ su glassfish
