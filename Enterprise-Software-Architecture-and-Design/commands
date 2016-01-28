@@ -48,3 +48,29 @@ tar -xzvf jdk-7-linux-x64.tar.gz
 10. Become special glassfish user
 $ cd ~glassfish
 $ su glassfish
+
+11. Glassfish bin folder location
+$ cd /usr/share/glassfish4/bin
+
+12. Application server administration
+$ ./asadmin
+
+13. Change Master Password
+$ change-master-password --savemasterpassword
+
+14. Change Administrator password
+$ change-admin-password
+
+15. Start application server
+$ start-domain
+
+16. Enable secure admin
+$ enable-secure-admin
+
+17. Restart server
+$ restart-domain
+
+18. Stop server
+$ stop-domain
+
+
