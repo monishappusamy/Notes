@@ -1,0 +1,2 @@
+puts "Hello World" - print and goes to next line
+print "Hello World" - print single line
